@@ -1,0 +1,146 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #AA98A9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.enlace {
+    padding: 20px 77px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.enlace:hover {
+color: #ddd; /* Color de fondo al hacer hover */
+}
+
+.frasco {
+    background-image: url('Img/frasco4.png');
+    background-size: cover;
+    background-position: center;
+    width: 22vw; /* Ajusta el ancho del frasco para adaptarlo a la pantalla */
+    height: 310px;
+    display: inline-block;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton-opcion {
+    width: 70px;
+    height: 75px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.seccion {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion h2 {
+    color: #7b3da0;
+}
+
+.seccion p {
+    color: #666;
+}
+
+/* Mostrar la sección correspondiente al hacer clic */
+:target {
+    display: block;
+}
+#frasco h1 {
+    font-size: 5em;
+}
+
+#opciones .container {
+    display: flex;
+    justify-content: center;
+}
+
+#opciones .frasco-imagen {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('Img/frasco4.png'); /* Reemplaza 'frasco-imagen.jpg' con tu imagen */
+    background-size: cover;
+    background-position: center center;
+}
+
+#opciones .frasco-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 50%;
+    max-width: 550px;
+    padding-left: 30px;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#opciones h2 {
+    margin-top: 0px;
+}
+
+#colores .opciones {
+    position: absolute;
+    top: 60%; /* Ajusta la posición vertical según tu preferencia */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.boton-color {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 720px) {
+    .frasco {
+        width: 40vw;
+        max-width: none;
+        height: 53vw;
+        max-height: none;
+    }
+
+    .boton-opcion {
+        width: 13vw;
+        max-width: none;
+        height: 12vw;
+        max-height: none;
+    }
+
+    .enlace {
+        padding: 20px 120px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+}
